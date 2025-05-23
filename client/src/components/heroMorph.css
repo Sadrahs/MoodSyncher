@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "WHOA Spine Minimum";
+    src: url("https://assets.codepen.io/174183/WHOA-Variable-Spine-v0.3.ttf")
+      format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "WHOA Top Minimum";
+    src: url("https://assets.codepen.io/174183/WHOA-Variable-Top-v0.3.ttf")
+      format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .HeroWrapper {
+    font-family: sans-serif;
+    max-width: 70rem;
+    padding: 2rem;
+    height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    place-items: start;
+    position: relative;
+    top: 20%;
+    left: 5%;
+    z-index: 1;
+    justify-content: center;
+    margin-left: 1vw;
+    backdrop-filter: blur(6px); /* optional glass effect */
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+    width: 100%;
+    padding-left: 5vw;
+    
+  }
+  
+  .HeroWrapper h1 {
+    text-transform: uppercase;
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .HeroWrapper h1 span {
+    display: block;
+    cursor: url("https://assets.codepen.io/174183/spiral_1.png"), auto;
+    font-family: "WHOA Top Minimum";
+    font-variation-settings: "hrzn" 0, "vert" 0, "rota" 0, "zoom" 0;
+    font-weight: normal;
+    font-size: clamp(8rem, 14vw, 20rem);
+    position: relative;
+    line-height: 0.5;
+    margin: 0 0 0 1rem;
+    transition: all 1s cubic-bezier(0.42, 0, 0.11, 1.43);
+    color: #ff0000;
+  }
+  
+  .HeroWrapper h1 span::before {
+    content: "Movie";
+    font-family: "WHOA Spine Minimum";
+    font-variation-settings: "hrzn" 0, "vert" 0, "rota" 0, "zoom" 0;
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+  }
+  
+  .HeroWrapper h1 span:hover,
+  .HeroWrapper h1 span:hover::before {
+    font-variation-settings: "hrzn" 820, "vert" -1000, "rota" 59, "zoom" 820;
+  }
+  
+  .HeroWrapper h1 span:hover {
+    -webkit-text-stroke: 1px white;
+  }
+  
+  .HeroWrapper p {
+    max-width: 60ch;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ccc;
+  }
+  

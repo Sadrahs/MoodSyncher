@@ -1,0 +1,50 @@
+.Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.6); /* transparent glassy effect */
+    backdrop-filter: blur(10px);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  
+  .NavbarInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .Logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .NavLinks a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    transition: color 0.2s font-size 0.2 ease;
+  }
+  
+  .NavLinks a:hover {
+    color: #ff0080; /* or whatever accent color */
+  }
+  
+
+.Navbar.shrink {
+    padding: 0.6rem 2rem;
+    background: rgba(0, 0, 0, 0.7);
+
+  }
